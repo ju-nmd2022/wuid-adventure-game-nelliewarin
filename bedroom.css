@@ -1,0 +1,50 @@
+body {
+  background-image: url(images/backdrop/bedroom.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.arrowContainer {
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+  grid-template-rows: auto;
+  grid-template-areas: "left" "right";
+}
+
+.leftArrow {
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.leftArrow img {
+  padding-left: 2vw;
+  width: 13vw;
+  height: 9vh;
+}
+
+.rightArrow {
+  display: flex;
+  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.rightArrow img {
+  padding-right: 6vw;
+  width: 13vw;
+  height: 9vh;
+}
