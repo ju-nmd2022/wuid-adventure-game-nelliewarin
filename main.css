@@ -7,18 +7,38 @@ body {
   width: 100vw;
   height: 100vh;
 }
-main {
+
+.keyImage {
+  height: 30vh;
   display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
-.arrowContainer {
+.keyImage img {
+  margin-right: 10vw;
+  height: 10vh;
+}
+
+main {
+  display: flex;
+  position: relative;
+}
+
+.container {
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+}
+
+.mainContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 45vh;
   justify-content: space-between;
   width: 100vw;
-  height: 10vh;
+  height: 40vh;
+  position: absolute;
 }
 
 .leftArrow {
@@ -29,6 +49,25 @@ main {
   padding-left: 2vw;
   width: 13vw;
   height: 9vh;
+}
+
+.dobbyLucius {
+  display: flex;
+  height: 25vh;
+  margin-top: 20vh;
+  padding-right: 40vw;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.dobby {
+  display: flex;
+  height: 15vh;
+}
+
+.lucius {
+  display: flex;
+  height: 25vh;
 }
 
 .rightArrow {
@@ -44,9 +83,12 @@ main {
 .harryImage {
   height: 45vh;
   display: flex;
+  margin-top: 25vh;
+  justify-content: baseline;
   justify-content: center;
 }
 
 .harryImage img {
   display: flex;
+  z-index: 1;
 }
