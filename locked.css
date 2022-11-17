@@ -1,4 +1,5 @@
 body {
+  margin: 0px;
   background-image: url(images/backdrop/gate.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -6,28 +7,22 @@ body {
   width: 100vw;
   height: 100vh;
 }
-
-.outer {
+main {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
 .arrowContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45vh;
+  justify-content: space-between;
   width: 100vw;
-  height: auto;
-  display: grid;
-  grid-template-columns: 50vw 50vw;
-  grid-template-rows: auto;
-  grid-template-areas: "left" "right";
+  height: 10vh;
 }
 
 .leftArrow {
   display: flex;
-  justify-content: center;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .leftArrow img {
@@ -38,13 +33,21 @@ body {
 
 .rightArrow {
   display: flex;
-  justify-content: center;
-  justify-content: flex-end;
-  align-items: center;
 }
 
 .rightArrow img {
-  padding-right: 6vw;
+  padding-right: 2vw;
   width: 13vw;
   height: 9vh;
+}
+
+.harryImage {
+  height: 45vh;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2vw;
+}
+
+.harryImage img {
+  display: flex;
 }
