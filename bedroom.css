@@ -31,14 +31,18 @@ main {
   height: 9vh;
 }
 
-.rightArrow {
+.rightSock {
   display: flex;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
 }
 
-.rightArrow img {
-  padding-right: 2vw;
-  width: 13vw;
-  height: 9vh;
+.rightSock img {
+  display: flex;
+  height: 13vh;
+  margin-right: 25vw;
+  margin-bottom: 10vh;
 }
 
 .harryImage {
