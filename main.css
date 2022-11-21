@@ -92,3 +92,11 @@ main {
   display: flex;
   z-index: 1;
 }
+
+.key-off {
+  opacity: 0;
+}
+
+.key-on {
+  opacity: 1;
+}

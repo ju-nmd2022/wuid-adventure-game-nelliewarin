@@ -31,6 +31,12 @@ main {
   height: 9vh;
 }
 
+.lockBox {
+  opacity: 0;
+  width: 20vw;
+  height: 30vh;
+}
+
 .rightArrow {
   display: flex;
 }
@@ -42,12 +48,31 @@ main {
 }
 
 .harryImage {
-  height: 45vh;
+  margin-top: 5vh;
+  height: 40vh;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding-right: 2vw;
 }
 
 .harryImage img {
   display: flex;
+  height: 40vh;
+}
+
+.lockText-off {
+opacity: 0;
+}
+
+.lockText-on {
+opacity: 1;
+background-color: antiquewhite;
+display: flex;
+align-items: center;
+text-align: center;
+font-size: 2em;
+height: 50%;
+width:30%;
+color: black;
 }
