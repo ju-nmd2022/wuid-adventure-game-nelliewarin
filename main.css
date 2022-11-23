@@ -60,6 +60,7 @@ main {
 #key {
   display: flex;
   width: 3vw;
+  cursor: pointer;
 }
 
 .container {
@@ -128,11 +129,13 @@ main {
   width: 5vw;
   margin-left: 25vw;
   margin-bottom: 10vh;
+  cursor: pointer;
 }
 
 #panties {
   width: 5vw;
   margin-bottom: 10vh;
+  cursor: pointer;
 }
 
 .diary {
