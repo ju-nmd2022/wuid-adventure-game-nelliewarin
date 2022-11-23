@@ -1,58 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Castle</title>
-    <link rel="stylesheet" href="main.css" />
-    <script src="game.js" defer></script>
-  </head>
-
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+    <title>Save Dobby</title>
+</head>
+<body>
+    <img id="castle" src="images/backdrop/castle.jpg" alt="a room in a castle">
+    
     <div class="keyImage">
-      <img class="key-off" id="key" src="images/items/key.png" alt="a key is hanging on the wall." />
-    </div>
 
-    <main>
-      <div class="container">
-        <container class="mainContainer">
-          <div class="leftArrow">
-            <a href="locked.html">
-              <img
-                src="images/items/arrowleft.png"
-                alt="wooden arrow pointing left"
-              />
-            </a>
-          </div>
-
-          <div class="dobbyLucius">
-            <img
-              class="dobby"
-              src="images/characters/dobbyass.png"
-              alt="dobby standing in the background"
-            />
-            <img
-              class="lucius"
-              src="images/characters/lucius.png"
-              alt="lucius standing in the background"
-            />
-          </div>
-
-          <div class="rightArrow">
-            <a href="bedroom.html">
-              <img
-                src="images/items/arrowright.png"
-                alt="wooden arrow pointing right"
-              />
-            </a>
-          </div>
-        </container>
-
-        <div class="harryImage">
-          <img src="images/characters/harry.png" alt="" />
+      <div class="storage">
+        <img id="s_key" src="images/items/key.png" alt="">
+        <img id="s_diary" src="images/items/diary.png" alt="">
+        <img id="s_sock" src="images/items/sock.png" alt="">
+        <img id="s_panties" src="images/items/panties.png" alt="">
+      </div>
+          <h1 id="intro">Help Harry make Dobby a free elf !</h1>
+        <div class="keyContainer">
+          <img id="key" src="images/items/key.png" alt="a key is hanging on the wall." />
         </div>
       </div>
-    </main>
-  </body>
+  
+      <main>
+        <div class="container">
+          <container class="mainContainer">
+            <div class="leftArrow">
+                <img
+                id="arrowLeft"
+                  src="images/items/arrowleft.png"
+                  alt="wooden arrow pointing left"
+                />
+            </div>
+  
+            <div class="dobbyLucius">
+              <img
+              id="dobby"
+                class="dobby"
+                src="images/characters/dobbyass.png"
+                alt="dobby standing in the background"
+              />
+              <img
+              id="lucius"
+                class="lucius"
+                src="images/characters/lucius.png"
+                alt="lucius standing in the background"
+              />
+
+              <img
+              class="lockBox"
+              id="lockBox"
+              src="images/items/1200px-LetterX.svg.png"
+              alt=""
+            />
+            </div>
+
+            <div id="sockPanties" class="sockPanties">
+              <img id="sock" src="images/items/sock.png" alt="sock">
+              <img id="panties" src="images/items/panties.png" alt="panties">
+            </div>
+
+            <div class="diary">
+              <img 
+                id="diary"
+                src="images/items/diary.png" alt="the diary off Tom Dolder">
+              </div>
+
+  
+            <div class="rightArrow">
+                <img
+                id="arrowRight"
+                  src="images/items/arrowright.png"
+                  alt="wooden arrow pointing right"
+                />
+            </div>
+          </container>
+  
+          <div class="harryImage">
+            <article id="gateTextInfo">
+                <p>
+                  The gate to the Library seems to be locked...
+                  Lets look around to see if I can find a key.
+                </p>
+              </article>
+              <article id="missingItemsTextInfo">
+                <p>
+                  We need to find a diary and a personal item to give to Lucius.
+                  If Lucius gives the items to Dobby, he will be free !
+                </p>
+              </article>
+              <article id="finish">
+                <img class="happyDobby" src="images/characters/dobbyhappy.png" alt="portait of a happy Dobby">
+                <p>
+                  Thank you Harry for saving me,
+                  I´m now a free elf!
+                </p>
+              </article>
+            <img src="images/characters/harry.png" alt="" />
+            
+          </div>
+
+        </div>
+      </main>
+    </body>
+</body>
 </html>

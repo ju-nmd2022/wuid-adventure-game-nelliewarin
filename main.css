@@ -1,9 +1,13 @@
 body {
   margin: 0px;
-  background-image: url(images/backdrop/castle.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+}
+
+main {
+  display: flex;
+}
+
+#castle {
+  position: absolute;
   width: 100vw;
   height: 100vh;
 }
@@ -11,24 +15,56 @@ body {
 .keyImage {
   height: 30vh;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  position: relative;
+  gap: 3vw;
 }
 
-.keyImage img {
-  margin-right: 10vw;
+.storage {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3vh;
+  width: 20vw;
   height: 10vh;
 }
 
-main {
+.storage img {
   display: flex;
-  position: relative;
+  width: 3vw;
+}
+
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  min-width: 40rem;
+  height: 15vh;
+
+  font-size: 3em;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  color: black;
+  background-color: wheat;
+  border: 3px solid black;
+  border-radius: 0.5em;
+}
+
+.keyContainer {
+  display: flex;
+  width: 20vw;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#key {
+  display: flex;
+  width: 3vw;
 }
 
 .container {
   width: 100vw;
   height: 70vh;
-  position: relative;
 }
 
 .mainContainer {
@@ -45,58 +81,138 @@ main {
   display: flex;
 }
 
-.leftArrow img {
+#arrowLeft {
   padding-left: 2vw;
   width: 13vw;
   height: 9vh;
+  cursor: pointer;
 }
 
 .dobbyLucius {
   display: flex;
-  height: 25vh;
-  margin-top: 20vh;
-  padding-right: 40vw;
+  height: 40vh;
   align-items: baseline;
   justify-content: center;
 }
 
 .dobby {
   display: flex;
+  margin-top: 25vh;
   height: 15vh;
+  cursor: pointer;
 }
 
 .lucius {
   display: flex;
   height: 25vh;
+  padding-right: 20vw;
+}
+
+#lockBox {
+  display: flex;
+  width: 20vw;
+  height: 40vh;
+  cursor: pointer;
+  margin-left: 15vw;
+  opacity: 0;
+}
+
+.sockPanties {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sock {
+  width: 5vw;
+  margin-left: 25vw;
+  margin-bottom: 10vh;
+}
+
+#panties {
+  width: 5vw;
+  margin-bottom: 10vh;
+}
+
+.diary {
+  height: 40vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#diary {
+  width: 5vw;
+  margin-left: 20vw;
 }
 
 .rightArrow {
   display: flex;
 }
 
-.rightArrow img {
+#arrowRight {
   padding-right: 2vw;
   width: 13vw;
   height: 9vh;
+  cursor: pointer;
 }
 
 .harryImage {
   height: 45vh;
   display: flex;
   margin-top: 25vh;
-  justify-content: baseline;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2em;
 }
 
 .harryImage img {
   display: flex;
+  height: 45vh;
   z-index: 1;
 }
 
-.key-off {
-  opacity: 0;
+#gateTextInfo {
+  background-color: wheat;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 2em;
+  height: 50%;
+  width: 30%;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: black;
+  z-index: 1;
 }
 
-.key-on {
-  opacity: 1;
+#missingItemsTextInfo {
+  background-color: wheat;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 2em;
+  height: 50%;
+  width: 30%;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: black;
+  z-index: 1;
+}
+
+#finish {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 2em;
+  height: 50%;
+  width: 30%;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: black;
+  z-index: 1;
+ }
+
+#finish p {
+  background-color: wheat;
 }
