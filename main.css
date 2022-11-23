@@ -144,6 +144,7 @@ main {
 #diary {
   width: 5vw;
   margin-left: 20vw;
+  cursor: pointer;
 }
 
 .rightArrow {
